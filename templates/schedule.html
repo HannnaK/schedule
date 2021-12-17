@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+{% extends "base.html" %}
+{% block title %} Harmonogram {% endblock %}
+{% block content %}
+
+<table class="table table-striped">
+
+    <tr>
+        <th>numer projektu</th>
+        {% for data in all_project_number %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>nazwa projektu</th>
+        {% for data in all_project_name %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>nakład</th>
+        {% for data in all_project_circulation %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>liczba stron</th>
+        {% for data in all_pages_number %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>format papieru</th>
+        {% for data in all_project_paper_size %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>łączenie</th>
+        {% for data in all_project_binding %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>rodzaj druku</th>
+        {% for data in all_project_printing_type %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>czas naświetlania</th>
+        {% for data in all_time_exposure %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas druku offset</th>
+        {% for data in all_time_print_offset %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas druku cyfra</th>
+        {% for data in all_time_print_digit %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas introligatornia</th>
+        {% for data in all_time_bindery %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>start projektu</th>
+        {% for data in all_time_start %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>czas całego projektu</th>
+        {% for data in all_time_for_project %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        <th>zakończenie projektu</th>
+        {% for data in all_time_end_proces %}
+        <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+</table>
+
+{% endblock %}

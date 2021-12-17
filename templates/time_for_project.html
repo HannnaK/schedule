@@ -1,0 +1,120 @@
+<!doctype html>
+{% extends "base.html" %}
+{% block title %} Czasy projektów {% endblock %}
+{% block content %}
+<table class="table table-striped">
+
+    <tr>
+        <th>numer projektu</th>
+        {% for data in project_number %}
+             <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>nazwa projektu</th>
+        {% for data in project_name %}
+             <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas naświetlania</th>
+        {% for data in all_time_exposure %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas cięcia papieru przed drukiem</th>
+        {% for data in all_time_cutting_paper_before_printing %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas druku offset</th>
+        {% for data in all_time_print_offset %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+     <tr>
+        <th>czas druku cyfrowego</th>
+        {% for data in all_time_print_digit %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+     <tr>
+        <th>czas foliowania</th>
+        {% for data in all_time_foil %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas złamywania</th>
+        {% for data in all_time_breaking %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas zbierania</th>
+        {% for data in all_collection_time %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>obrównywanie okładki</th>
+        {% for data in all_time_cover_alignment %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>obrównywanie składki</th>
+        {% for data in all_time_section_quire_alignment %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas klejenia</th>
+        {% for data in all_gluing_time %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas docinania</th>
+        {% for data in all_trimming_time %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+     <tr>
+        <th>czas zszywania</th>
+        {% for data in all_stapling_time %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+    <tr>
+        <th>czas pakowania</th>
+        {% for data in all_time_packing %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+     <tr>
+        <th>czas całego projektu</th>
+        {% for data in all_time_for_project %}
+            <td>{{ data }}</td>
+        {% endfor %}
+    </tr>
+
+</table>
+{% endblock %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "base.html" %}
+{% load bootstrap %}
+{% block title %} Dane projektu {% endblock %}
+{% block content %}
+    <div class="card" style="width: 32rem; float: left; margin-left: 1rem;">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form_project|bootstrap }}
+
+            </form>
+    </div>
+{% endblock %}
