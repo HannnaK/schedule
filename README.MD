@@ -9,9 +9,6 @@
 
 **Launching the app:**
 - we run the application using the manage.py file
-
-**Application page:**
-- https://harmonogram-druku.herokuapp.com/
 - test user:
     - login: `hanka`
     - password: `hanka`
